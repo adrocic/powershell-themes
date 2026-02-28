@@ -6,23 +6,23 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#ebdbb2",
-          "leading_diamond": "<#ff70a6> \ue200 </>",
+          "foreground": "#abb2bf",
+          "leading_diamond": "<#c678dd> \ue200 </>",
           "style": "diamond",
-          "template": "{{ .UserName }} <#ffffff>on</>",
+          "template": "{{ .UserName }} <#4b5263>on</>",
           "type": "session"
         },
         {
-          "foreground": "#8ec07c",
+          "foreground": "#98c379",
           "options": {
-            "time_format": "Monday <#ffffff>at</> 3:04 PM"
+            "time_format": "Monday <#4b5263>at</> 3:04 PM"
           },
           "style": "diamond",
           "template": " {{ .CurrentDate | date .Format }} ",
           "type": "time"
         },
         {
-          "foreground": "#d3869b",
+          "foreground": "#56b6c2",
           "options": {
             "branch_icon": "\ue725 ",
             "fetch_status": true,
@@ -39,18 +39,18 @@
       "alignment": "right",
       "segments": [
         {
-          "foreground": "#83a598",
+          "foreground": "#61afef",
           "style": "plain",
           "type": "text"
         },
         {
-          "foreground": "#a9ffb4",
+          "foreground": "#61afef",
           "options": {
             "style": "dallas",
             "threshold": 0
           },
           "style": "diamond",
-          "template": " {{ .FormattedMs }}s <#ffffff>\ue601</>",
+          "template": " {{ .FormattedMs }}s <#4b5263>\ue601</>",
           "type": "executiontime"
         },
         {
@@ -62,9 +62,9 @@
           "type": "root"
         },
         {
-          "foreground": "",
+          "foreground": "#4b5263",
           "style": "diamond",
-          "template": " <#ffffff>MEM:</> {{ round .PhysicalPercentUsed .Precision }}% ({{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB)",
+          "template": " <#abb2bf>MEM:</> {{ round .PhysicalPercentUsed .Precision }}% ({{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB)",
           "type": "sysinfo"
         }
       ],
@@ -75,8 +75,8 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#fabd2f",
-          "leading_diamond": "<#00c7fc> \ue285 </><#ffafd2>{</>",
+          "foreground": "#e5c07b",
+          "leading_diamond": "<#d19a66> \ue285 </><#c678dd>{</>",
           "options": {
             "folder_icon": "\uf07b",
             "folder_separator_icon": " \uebcb ",
@@ -85,12 +85,12 @@
           },
           "style": "diamond",
           "template": " \ue5ff {{ .Path }} ",
-          "trailing_diamond": "<#ffafd2>}</>",
+          "trailing_diamond": "<#c678dd>}</>",
           "type": "path"
         },
         {
-          "foreground": "#A9FFB4",
-          "foreground_templates": ["{{ if gt .Code 0 }}#ef5350{{ end }}"],
+          "foreground": "#98c379",
+          "foreground_templates": ["{{ if gt .Code 0 }}#e06c75{{ end }}"],
           "options": {
             "always_enabled": true
           },
@@ -105,7 +105,7 @@
   "console_title_template": "{{ .Folder }}",
   "transient_prompt": {
     "background": "transparent",
-    "foreground": "#FEF5ED",
+    "foreground": "#abb2bf",
     "template": "\ue285 "
   },
   "version": 4
