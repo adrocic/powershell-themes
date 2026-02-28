@@ -32,7 +32,7 @@
         },
         {
           "background": "#040804",
-          "foreground": "#011627",
+          "foreground": "#6D8771",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
           "template": " \uf489 {{ .Name }} ",
