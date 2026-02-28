@@ -26,7 +26,7 @@
         },
         {
           "background": "#0F1B12",
-          "foreground": "#26C6DA",
+          "foreground": "#EDD83D",
           "style": "plain",
           "template": " \uf0e7 ",
           "type": "root"
