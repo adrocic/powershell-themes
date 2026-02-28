@@ -52,7 +52,7 @@
           "background": "#0F1B12",
           "foreground": "#EDD83D",
           "foreground_templates": [
-            "{{ if eq \"Full\" .State.String }}#292929{{ end }}",
+            "{{ if eq \"Full\" .State.String }}#EDD83D{{ end }}",
             "{{ if eq \"Charging\" .State.String }}#40c4ff{{ end }}",
             "{{ if eq \"Discharging\" .State.String }}#fb7e14{{ end }}"
           ],
@@ -87,7 +87,7 @@
       "segments": [
         {
           "background": "#0F1B12",
-          "foreground": "#fb7e14",
+          "foreground": "#EDD83D",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
           "template": " {{ if .SSHSession }}\ueba9 {{ end }}{{ .UserName }}@{{ .HostName }} <#fb7e14>\ue0b3</> ",
