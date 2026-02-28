@@ -6,7 +6,7 @@
       "segments": [
         {
           "background": "#292929",
-          "foreground": "#fb7e14",
+          "foreground": "#2F614F",
           "leading_diamond": "\u256d\u2500\ue0b2",
           "style": "diamond",
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} \ue0b1",
