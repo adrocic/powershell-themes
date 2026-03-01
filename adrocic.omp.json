@@ -82,14 +82,20 @@
           "template": " \ue7a8 {{ .Full }} "
         },
         {
-          "background": "#6D8771",
+          "background": "#073642",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#578F62{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#578F62{{ end }}",
-            "{{ if gt .Ahead 0 }}#578F62{{ end }}",
-            "{{ if gt .Behind 0 }}#578F62{{ end }}"
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#6D8771{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#6D8771{{ end }}",
+            "{{ if gt .Ahead 0 }}#6D8771{{ end }}",
+            "{{ if gt .Behind 0 }}#6D8771{{ end }}"
           ],
-          "foreground": "#073642",
+          "foreground": "#040804",
+          "foreground_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#073642{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#073642{{ end }}",
+            "{{ if gt .Ahead 0 }}#073642{{ end }}",
+            "{{ if gt .Behind 0 }}#073642{{ end }}"
+          ]
           "powerline_symbol": "\ue0b0",
           "options": {
             "branch_icon": "\ue725 ",
